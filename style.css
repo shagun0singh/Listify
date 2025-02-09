@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0c1b60 0%, #764ba2 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(228, 12, 12, 0.1);
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#todo-form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+#todo-input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+#add-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: #5a6fe0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+  opacity: 0.6;
+}
+
+li.completed span {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.delete-button {
+  margin-left: auto;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff5252;
+}
